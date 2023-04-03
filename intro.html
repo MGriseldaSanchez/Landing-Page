@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Protegemed</title>
+</head>
+<body class="back">
+    <video id="bg-video" autoplay loop muted>
+        <source src="assets/medi.mp4" type="video/mp4">
+      </video>
+      <div class="intro-text">
+        <h1>Protege-Med</h1>
+        <h2>Medicina Privada</h2>
+        <p>Conozca nuestros planes</p>
+        <button id="btn-empezar">Empezar</button>
+      </div>
+      <script>
+        const btnEmpezar = document.getElementById('btn-empezar');
+        btnEmpezar.addEventListener('click', ()=>{window.location.href = "index.html";});
+      </script>
+</body>
+</html>
