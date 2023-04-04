@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+/* solo m de titulo */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
   }
   
   #bg-video {
@@ -15,20 +21,118 @@ body{
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-  }
+    opacity: 0.8;
   
+  }
+
+/* filtro oscuro de fondo */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.532); /* ajusta la opacidad aquí */
+  }
+
   .intro-text {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: #e9e9e9;
   }
   
   .intro-text h1 {
     font-size: 5em;
     margin-bottom: 0.5em;
   }
-  
-  .intro-text p {
-    font-size: 2em;
+
+  .intro-text h1 strong{
+    color: #e4002b;
+    font-family: 'Fasthand', cursive;
+    
   }
+
+/* boton intro */
+
+.ov-btn-grow-ellipse {
+  background: #e4002b; /* color de fondo */
+  color: #e9e9e9; /* color de fuente */
+  border: 2px solid #e4002b; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 25px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 15px;
+}
+.ov-btn-grow-ellipse:hover {
+  color: #e4002b;/* color de fuente hover */
+}
+.ov-btn-grow-ellipse::after {
+  content: "";
+  background: #e9e9e9; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+.ov-btn-grow-ellipse:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+
+/*--efectos---*/
+.efecto {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:30px;
+}
+
+.efecto:first-of-type {    
+  animation: showup 7s infinite;
+}
+
+.efecto:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.efecto:last-of-type span {
+   margin-left:300px; 
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
