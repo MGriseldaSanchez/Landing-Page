@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-/* solo m de titulo */
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
 body{
     margin: 0;
     padding: 0;
@@ -135,4 +130,10 @@ body{
     100% {opacity:0;width:355px;}
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+/* solo m de titulo */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
