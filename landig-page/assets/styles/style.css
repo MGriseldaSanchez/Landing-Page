@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+/* solo M de titulo */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -27,7 +32,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.532); /* ajusta la opacidad aquí */
+    background-color: rgba(0, 0, 0, 0.532); /* opacidad con transparencia */
   }
 
   .intro-text {
@@ -131,9 +136,5 @@ body{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-/* solo m de titulo */
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
