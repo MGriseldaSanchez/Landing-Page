@@ -195,4 +195,11 @@ footer {
 
 
 
+/* estilo pagina nosotros*/
 
+.container-nos {
+
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
