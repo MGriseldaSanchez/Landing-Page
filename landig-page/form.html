@@ -11,12 +11,12 @@
   <!-- iconos -->
   <link href="https://file.myfontastic.com/a3qKaH3uZJjiPF6twCcdb/icons.css" rel="stylesheet">
   <link href="intro.html">
+  <link rel="shortcut icon" href="assets/img/latidos2-.ico" type="image/x-icon">
   <!-- CDN de jquery y jquery-validate -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
   <link rel="stylesheet" href="assets/styles/main.css">
   <title>Protegemed</title>
-
 </head>
 
 <body>
@@ -78,12 +78,12 @@
               </a>
               <ul class="dropdown-menu">
             </li>
-            <li><a class="dropdown-item" href="#">Buenos aires</a></li>
-            <li><a class="dropdown-item" href="#">Cordoba</a></li>
-            <li><a class="dropdown-item" href="#">Entre Rios</a></li>
-            <li><a class="dropdown-item" href="#">Rio Negro</a></li>
-            <li><a class="dropdown-item" href="#">San juan</a></li>
-            <li><a class="dropdown-item" href="#">Santa Fe</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/pBJaSTCmRSomrk5RA" target="_blank">Buenos aires</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/5SXGCpmjvjv3Jyrj7" target="_blank">Cordoba</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/Hy3v3otpFe57eCPX6" target="_blank">Entre Rios</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/j3rn6yqDhFqX8PF77" target="_blank">Rio Negro</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/kQQbbwZvJBqRP7dp7" target="_blank">San juan</a></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/yb63BX7jE2SGos2V7" target="_blank">Santa luis</a></li>
           </ul>
           </li>
           </ul>
@@ -96,7 +96,7 @@
 
   <!-- titulo del formulario -->
   <div class="form-title">
-    <h1>Contactese con nosotros</h1>
+    <h2>contacto</h2>
   </div>
   <!-- div contenedor de formulario -->
   <div class="form-container">
@@ -124,24 +124,27 @@
         <label class="form-label" for="genero">Genero</label>
         <!-- checkbox femenino -->
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <input class="form-check-input" type="checkbox" value="option1" id="flexCheckDefault name="genero">
           <label class="form-check-label" for="flexCheckDefault">
             Femenino
           </label>
         </div>
+
         <!-- checkbox masculino -->
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <input class="form-check-input" type="checkbox" value="option2" id="flexCheckDefault" name="genero">
           <label class="form-check-label" for="flexCheckDefault">
             Masculino
           </label>
         </div>
+
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <input class="form-check-input" type="checkbox" value="option3" id="flexCheckDefault" name="genero">
           <label class="form-check-label" for="flexCheckDefault">
-            Prefiero no contestar
+            Otro
           </label>
         </div>
+
       </div>
 
       <!-- email -->
@@ -153,8 +156,9 @@
       <!-- plan -->
       <div class="m-3">
         <label class="form-label" for="plan">Elija un plan</label>
-        <select class="form-select" id="plan" name="plan" required>
-          <option selected>Seleccione</option>
+        <select class="form-select" id="plan" name="plan">
+          <!-- el value de la primera opcion es una cadena vacia.Se usa para asegurarse de que el usuario seleccione una opción válida antes de enviar el formulario. -->
+          <option value="">--Seleccione una opcion--</option>
           <option value="1">Plan basico</option>
           <option value="2">Plan familiar</option>
           <option value="3">Plan personalizado</option>
@@ -163,7 +167,7 @@
 
       <!-- mensaje -->
       <div class="m-3">
-        <label for="mensaje">Mensaje <span>(obligatorio,minimo 30 caracteres)</span></label>
+        <label for="mensaje">Dejanos tu consulta <span>(Minimo 30 caracteres)</span></label>
         <textarea placeholder="Por favor escriba un mensaje" class="form-control " id="mensaje" cols="30" rows="10"
           name="mensaje"></textarea>
       </div>
@@ -176,6 +180,10 @@
 
   </div>
   <br>
+
+  <div id="successMessage" style="display:none;">
+    <p></p>
+  </div>
 
 
   <footer>
@@ -201,8 +209,7 @@
 
   <script src="app.js"></script>
 
-  <!-- biblioteca jsPDF usar? -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script> -->
+
 </body>
 
 </html>

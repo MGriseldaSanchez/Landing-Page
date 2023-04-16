@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
+/* fuente prueba */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -40,6 +43,7 @@ body{
     z-index: 1;
     text-align: center;
     color: #e9e9e9;
+ 
   }
   
   .intro-text h1 {
@@ -48,9 +52,14 @@ body{
   }
 
   .intro-text h1 strong{
-    color: #e4002b;
-    font-family: 'Fasthand', cursive;
-    
+    /* color: #e4002b; */
+    font-family: 'Bebas Neue', cursive;
+    font-size:150px;
+
+    background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores webkit */
+  color: transparent;
+  background-image: linear-gradient(to right, #e4002b, #fc466b);
   }
 
 /* boton intro */
