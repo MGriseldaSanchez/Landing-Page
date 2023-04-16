@@ -7,3 +7,4 @@ fix se arregla menu de navegacion de cada pagina
 
 se agrega link de ubicaciones aleatorias de cada sucursal
 se agrega funcion que enfoca campos invalidos al enviar el formulario
+se agrega tarjetas de pagina nos.
