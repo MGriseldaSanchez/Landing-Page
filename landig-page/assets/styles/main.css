@@ -121,6 +121,11 @@ li {
   color: var(--main-color);
 }
 
+main{
+  height: 90vh;
+  width: 100%;
+}
+
 
 /* formulario */
 
@@ -138,12 +143,13 @@ li {
 }
 
 #contact{
-  background-color:var(--main-color) ;
+  background-color: rgb(182, 181, 181) ;
   border-radius: 20px;
   color: var(--back-color);
   width: 80vh;
 
 }
+
 
 span{
   font-style: italic;
@@ -151,14 +157,17 @@ span{
 }
 
 /* footer */
-
+/* footer fijo# */
 footer {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    position:inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    border-top: 2px solid var(--main-color);
   }
+
   
   .contacto {
     text-align:center;
@@ -167,23 +176,25 @@ footer {
   }
   
   .contacto span {
-    margin: 0;
+    /* margin: 0; */
     font-size: 14px;
     line-height: 1.5;
   }
 
-  /* div .copy{
+  div .copy{
     font-size: small;
-  } */
-  
+  }
+
+
   /* hay que centrar iconos de redes */
   .redes a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color: #333;
     text-decoration: none;
     font-size: 15px;
 
   }
+
   
   .redes a:hover {
     color: var(--main-color);
