@@ -193,8 +193,6 @@ footer {
     margin-right: 10px;
   }
 
-
-
 /* estilo pagina nosotros*/
 
 .container-nos {
@@ -204,13 +202,42 @@ footer {
   flex-wrap: wrap;
 }
 
+/*sucursales*/
 
-.sanluiss , .sanjuann , .cordobaa , .entreerios , .rionegroo {
-
-  display:flex ;
-  justify-content:center;
-  align-items: center;
-
+.gallery-sucur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10vh;
+  padding: 40px;
 }
 
- 
+iframe {
+  width: 250px;
+  height: 200px;
+  border: none;
+}
+
+.titl-sucursal{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.map-container{
+position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.564);
+  color: #fff;
+  padding: 30px;
+}
+
+.map-container:hover .map-overlay {
+  display: block;
+}
