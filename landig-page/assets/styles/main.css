@@ -203,3 +203,14 @@ footer {
   justify-content:space-around;
   flex-wrap: wrap;
 }
+
+
+.sanluiss , .sanjuann , .cordobaa , .entreerios , .rionegroo {
+
+  display:flex ;
+  justify-content:center;
+  align-items: center;
+
+}
+
+ 
