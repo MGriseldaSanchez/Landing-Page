@@ -9,6 +9,8 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="https://file.myfontastic.com/a3qKaH3uZJjiPF6twCcdb/icons.css" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/latidos2-.ico" type="image/x-icon">
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/styles/main.css">
   <title>Protegemed</title>
 </head>
@@ -40,7 +42,7 @@
                 aria-expanded="false">
                 planes </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href=".card">plan personal</a></li>
+                <li><a class="dropdown-item" href="intro.html/.card">plan personal</a></li>
                 <li><a class="dropdown-item" href="#">plan parejas</a></li>
                 <li><a class="dropdown-item" href="#">plan full familiar</a></li>
                 <li><a class="dropdown-item" href="form.html">Consulta por mas planes</a></li>
@@ -70,7 +72,6 @@
               <a class="nav-link" href="sucursales.html">Sucursales</a>
             </li>
 
-
           </ul>
           </li>
 
@@ -99,7 +100,7 @@
               <li>Emergencias 24hs</li>
               <li>Estudios de laboratorio</li>
             </ul>
-            <button class="btn-card">Seleccionar</button>
+            <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
           <!-- tarjeta 2 -->
@@ -112,7 +113,7 @@
               <li>Estudios laboratorios</li>
               <li>Emergencias odontologica 24hs</li>
             </ul>
-            <button class="btn-card">Seleccionar</button>
+            <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
           <!-- tarjeta 3 -->
@@ -126,7 +127,7 @@
               <li>Plan Odontologico incluido</li>
               <li>Estudios de laboratorios y de alta complejidad</li>
             </ul>
-            <button class="btn-card">Seleccionar</button>
+            <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
         </div>
@@ -159,12 +160,18 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
-  <!-- script que redirecciona cada plan al formulario -->
+  <!-- script que redirecciona cada plan al formulario con jquery -->
   <script>
-    //? porque solo abre el el formulario la primera tarjeta? fix
-    btnForm = document.querySelector(".btn-card")
-    btnForm.addEventListener('click', () => { window.location.href = "form.html" })
+    $(document).ready(function() {
+
+      $('.btn-card').click(function() {
+
+       let enlace = $(this).data('enlace')
+        window.location.href = enlace
+      });
+    });
   </script>
+
 
 </body>
 

@@ -17,12 +17,14 @@
 /* hoja de estilo de pagina principal */
 /* header */
 header {
-    background-color: var(--back-color);
+    /* background-color: var(--back-color); */
     border-bottom: 2px solid var(--main-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
+    
   }
   /* logo */
   img{
@@ -31,21 +33,31 @@ header {
     margin-right: 10px;
   }
   /* menu del nav */
+
+  nav {
+    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
+    width: 0px;
+    height: 50px;
+  }
+
   nav ul {
     list-style: none;
     display: flex;
+
   }
   /* opciones del nav */
   nav ul li {
     margin-right: 20px;
+    
   }
   
   nav ul li:last-child {
     margin-right: 0;
+    
   }
   
   nav ul li a {
-    color: #333;
+    color: var(--back-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -116,7 +128,7 @@ li {
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn-card:hover {
   background-color: var(--back-color);
   color: var(--main-color);
 }
@@ -173,9 +185,9 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #333;
+    color: var(--back-color);
     text-align: center;
-    border-top: 2px solid var(--main-color);
+    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
   }
 
   
