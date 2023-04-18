@@ -132,7 +132,7 @@ main{
 .form-title{
   text-align: center;
   color: #333;
-  font-style: italic;
+  margin-top: 10px;
 }
 
 .form-container{
@@ -143,21 +143,31 @@ main{
 }
 
 #contact{
-  background-color: rgb(182, 181, 181) ;
-  border-radius: 20px;
-  color: var(--back-color);
-  width: 80vh;
-
+  /* background-color: var(--main-color) ; */
+  /* border-radius: 20px; */
+  color: #1e272e;
+  width: 90vh;
 }
 
+.form-control, .form-select{
+  border:1px solid #1e272e;
+}
+
+.form-label{
+  font-size: medium;
+}
 
 span{
   font-style: italic;
   font-size: small;
 }
 
+/*mensaje de error*/
+.error{
+  color: var(--main-color);
+}
+
 /* footer */
-/* footer fijo# */
 footer {
     position:inherit;
     left: 0;
@@ -232,7 +242,7 @@ iframe {
 
 .titl-sucursal{
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .map-container{
@@ -252,3 +262,6 @@ position: relative;
 .map-container:hover .map-overlay {
   display: block;
 }
+
+/*-----------*/
+

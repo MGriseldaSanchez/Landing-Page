@@ -77,8 +77,12 @@ $(document).ready(function () {
         minlength: `Debe tener un minimo de 30 caracteres`,
       },
     },
+    // se crea un elemento span donde se muestra el msj de error
+    errorElement : 'span'
   });
 });
+
+
 
 /* enfoca sobre el campo invalido al enviar el formulario */
 
