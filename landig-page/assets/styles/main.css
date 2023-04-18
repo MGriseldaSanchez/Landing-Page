@@ -16,26 +16,52 @@
 }
 /* hoja de estilo de pagina principal */
 /* header */
+
+
+body{
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-blend-mode: multiply; /* mezcla la imagen de fondo con el color de fondo */
+  background-color: rgba(48, 46, 46, 0.7); /* establece un color de fondo semi-transparente */
+}
+
+
 header {
-    /* background-color: var(--back-color); */
+    background-color: var(--back-color);
     border-bottom: 2px solid var(--main-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
-    
   }
+
+
   /* logo */
   img{
     width: 60px;
     height: 60px;
     margin-right: 10px;
   }
-  /* menu del nav */
 
+  .logo{
+    animation: heartbeat 1s infinite;
+  }
+
+  /* efecto latido en logo */
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+
+  /* menu del nav */
   nav {
-    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
     width: 0px;
     height: 50px;
   }
@@ -86,7 +112,30 @@ header {
   text-align: center;
   padding: 20px;
   margin: 20px;
+
 }
+
+.card:hover{
+  width: 600px;
+  height: 600px;
+}
+
+
+.text-oculto {
+  /* no se muestra, solo en :hover */
+  display: none;
+  text-align: center;
+ font-size: 20px;
+ color: #333;
+
+}
+
+.card:hover .text-oculto {
+  display: block;
+}
+
+
+
 /* titulos de tarjetas */
 .card h2 {
   font-size: 45px;
@@ -142,7 +191,7 @@ main{
 
 .form-title{
   text-align: center;
-  color: #333;
+  color: rgb(255, 255, 255);
   margin-top: 10px;
 }
 
@@ -154,7 +203,7 @@ main{
 }
 
 #contact{
-  /* background-color: var(--main-color) ; */
+  background-color: rgba(255, 255, 255, 0.518) ;
   /* border-radius: 20px; */
   color: #1e272e;
   width: 90vh;
@@ -180,13 +229,14 @@ span{
 
 /* footer */
 footer {
-    position:inherit;
+    
     left: 0;
     bottom: 0;
     width: 100%;
-    color: var(--back-color);
-    text-align: center;
-    background-image: radial-gradient(circle at 50% -20.71%, #97bdff 0, #3c78f2 50%, #003886 100%);
+    color:black;
+    background-color: var(--back-color);
+    border-top: 2px solid var(--main-color);
+
   }
 
   
@@ -206,24 +256,30 @@ footer {
     font-size: small;
   }
 
-
   /* hay que centrar iconos de redes */
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
   .redes a {
     /* margin-right: 10px; */
-    color: #333;
+    color: rgb(35, 1, 255);
     text-decoration: none;
-    font-size: 15px;
-
+    /* font-size: 15px; */
+    
   }
 
-  
   .redes a:hover {
     color: var(--main-color);
   }
   
-  .fas, .fab {
+  /* .fas, .fab {
     margin-right: 10px;
-  }
+  } */
 
 /* estilo pagina nosotros*/
 
@@ -275,4 +331,6 @@ position: relative;
 }
 
 /*-----------*/
+
+/* tarjetas de planes.html */
 

@@ -23,38 +23,23 @@
       <div class="container-fluid">
         <!-- icono  -->
         <img src="assets/img/latidos-.png" alt="icono" class="logo">
-
-
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
-
           <ul class="navbar-nav ">
-
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="nos.html">Sobre nosotros</a>
             </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                planes </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="intro.html/.card">plan personal</a></li>
-                <li><a class="dropdown-item" href="#">plan parejas</a></li>
-                <li><a class="dropdown-item" href="#">plan full familiar</a></li>
-                <li><a class="dropdown-item" href="form.html">Consulta por mas planes</a></li>
-
-              </ul>
+            <!-- se reemplaza por link simple a intro -->
+            <li class="nav-item">
+              <a class="nav-link" href="intro.html">Planes</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 servicios
               </a>
-
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Consultorio externos</a></li>
                 <li><a class="dropdown-item" href="#">Examenes de laboratorios</a></li>
@@ -65,24 +50,23 @@
                 <li><a class="dropdown-item" href="#">Protesis</a></li>
                 <li><a class="dropdown-item" href="#">Cirugias</a></li>
               </ul>
-
-
               <!-- se reemplaza menu desplegable -->
             <li class="nav-item">
               <a class="nav-link" href="sucursales.html">Sucursales</a>
             </li>
-
           </ul>
           </li>
-
           </ul>
         </div>
       </div>
     </nav>
+
+
+
   </header>
 
 
-  
+
   <main>
 
     <div class="card-container">
@@ -100,6 +84,8 @@
               <li>Emergencias 24hs</li>
               <li>Estudios de laboratorio</li>
             </ul>
+            <p class="text-oculto">Nos complace ofrecerle variedad de servicios médicos de calidad a precios asequibles,
+              este plan incluye consultorios externos en nuestras sucursales y en clinicas privadas de prestigio</p>
             <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
@@ -113,6 +99,10 @@
               <li>Estudios laboratorios</li>
               <li>Emergencias odontologica 24hs</li>
             </ul>
+            <p class="text-oculto">
+              Este plan es ideal para parejas, que ademas de ofrecer las prestaciones basicas, tambien incluye
+              emergencia odontologica 24/7 en nuestros centros de atencion odontologicos.
+            </p>
             <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
@@ -127,6 +117,11 @@
               <li>Plan Odontologico incluido</li>
               <li>Estudios de laboratorios y de alta complejidad</li>
             </ul>
+            <p class="text-oculto">
+              Este plan familiar incluye todas nuetras prestaciones, desde emergencias medicas 24hs/7, atencion primaria
+              de salud en nuestros centros, un plan odontologico con cobertura para hasta 2 menores,estudios de alta
+              complejidad y descuentos en medicamentos.
+            </p>
             <button class="btn-card" data-enlace="form.html">Seleccionar</button>
           </div>
 
@@ -163,13 +158,23 @@
   <!-- script que redirecciona cada plan al formulario con jquery -->
   <script>
     /*Cuando se hace clic en uno de los botones, el código obtiene el valor del atributo "data-enlace" del botón y utiliza la propiedad "window.location.href" para redirigir al usuario a la página especificada.*/
-    $(document).ready(function() {
-      $('.btn-card').click(function() {
-       let enlace = $(this).data('enlace')
+    $(document).ready(function () {
+      $('.btn-card').click(function () {
+        let enlace = $(this).data('enlace')
         window.location.href = enlace
       });
     });
   </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
