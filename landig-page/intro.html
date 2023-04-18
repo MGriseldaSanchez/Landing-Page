@@ -162,17 +162,14 @@
 
   <!-- script que redirecciona cada plan al formulario con jquery -->
   <script>
+    /*Cuando se hace clic en uno de los botones, el código obtiene el valor del atributo "data-enlace" del botón y utiliza la propiedad "window.location.href" para redirigir al usuario a la página especificada.*/
     $(document).ready(function() {
-
       $('.btn-card').click(function() {
-
        let enlace = $(this).data('enlace')
         window.location.href = enlace
       });
     });
   </script>
-
-
 </body>
 
 </html>
