@@ -121,13 +121,18 @@ li {
   color: var(--main-color);
 }
 
+main{
+  height: 90vh;
+  width: 100%;
+}
+
 
 /* formulario */
 
 .form-title{
   text-align: center;
   color: #333;
-  font-style: italic;
+  margin-top: 10px;
 }
 
 .form-container{
@@ -138,11 +143,18 @@ li {
 }
 
 #contact{
-  background-color:var(--main-color) ;
-  border-radius: 20px;
-  color: var(--back-color);
-  width: 80vh;
+  /* background-color: var(--main-color) ; */
+  /* border-radius: 20px; */
+  color: #1e272e;
+  width: 90vh;
+}
 
+.form-control, .form-select{
+  border:1px solid #1e272e;
+}
+
+.form-label{
+  font-size: medium;
 }
 
 span{
@@ -150,15 +162,22 @@ span{
   font-size: small;
 }
 
-/* footer */
+/*mensaje de error*/
+.error{
+  color: var(--main-color);
+}
 
+/* footer */
 footer {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    position:inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    border-top: 2px solid var(--main-color);
   }
+
   
   .contacto {
     text-align:center;
@@ -167,23 +186,25 @@ footer {
   }
   
   .contacto span {
-    margin: 0;
+    /* margin: 0; */
     font-size: 14px;
     line-height: 1.5;
   }
 
-  /* div .copy{
+  div .copy{
     font-size: small;
-  } */
-  
+  }
+
+
   /* hay que centrar iconos de redes */
   .redes a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color: #333;
     text-decoration: none;
     font-size: 15px;
 
   }
+
   
   .redes a:hover {
     color: var(--main-color);
@@ -192,8 +213,6 @@ footer {
   .fas, .fab {
     margin-right: 10px;
   }
-
-
 
 /* estilo pagina nosotros*/
 
@@ -204,13 +223,45 @@ footer {
   flex-wrap: wrap;
 }
 
+/*sucursales*/
 
-.sanluiss , .sanjuann , .cordobaa , .entreerios , .rionegroo {
-
-  display:flex ;
-  justify-content:center;
-  align-items: center;
-
+.gallery-sucur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10vh;
+  padding: 40px;
 }
 
- 
+iframe {
+  width: 250px;
+  height: 200px;
+  border: none;
+}
+
+.titl-sucursal{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.map-container{
+position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.564);
+  color: #fff;
+  padding: 30px;
+}
+
+.map-container:hover .map-overlay {
+  display: block;
+}
+
+/*-----------*/
+
