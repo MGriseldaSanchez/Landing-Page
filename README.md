@@ -1,26 +1,27 @@
 ### Grupo 10
 ---
-* fix checkbox: ya se seleccionan solo uno.  
-* fix select name="plan: ya se muestra el mensaje del campo select del formulario.  
-* fix se arregla menu de navegacion de cada pagina.  
-* se agrega link de ubicaciones aleatorias de cada sucursal.  
-* se agrega funcion que enfoca campos invalidos al enviar el formulario.  
-* se agrega tarjetas de pagina nos.
+* Fix checkbox: ya se seleccionan solo uno.  
+* Fix select name="plan: ya se muestra el mensaje del campo select del formulario.  
+* Fix se arregla menu de navegacion de cada pagina.  
+* Se agrega link de ubicaciones aleatorias de cada sucursal.  
+* Se agrega funcion que enfoca campos invalidos al enviar el formulario.  
+* Se agrega tarjetas de pagina nos.
 ---
 * Se arregla la posicion del footer  
 * Se cambia link de sucursal
-* se crea pagina con sucursales
-* se reeemplaza menu desplegable de sucursales
-* ahora cada boton de "planes" de la pagina intro redirecciona al formulario
+* Se crea pagina con sucursales
+* Se reeemplaza menu desplegable de sucursales
+* Ahora cada boton de "planes" de la pagina intro redirecciona al formulario
 ---
-* se quita menu de planes del nav
-* se agrega texto de descripcion en cada tarjeta de planes
+* Se quita menu de planes del nav
+* Se agrega texto de descripcion en cada tarjeta de planes
 
-* arreglar pagina sucursales
-* arreglar pagina sobre nosotros
+* Se arregla pagina sucursales
+* Se arregla pagina sobre nosotros
 
-* se arregla pagina index.html
-* se agrega link hacia index.html en el logo
-* correcciones del nav
-* se crea tarjetas de "nosotros"
+* Se arregla pagina index.html
+* Se agrega link hacia index.html en el logo
+* Correcciones del nav
+* Se crea tarjetas de "nosotros"
+* Se da estilo al scroll vertical
 ---
