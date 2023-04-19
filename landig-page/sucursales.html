@@ -22,32 +22,25 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
         <!-- icono  -->
-        <img src="assets/img/latidos-.png" alt="icono" class="logo">
 
+        <a href="index.html"><img src="assets/img/latidos-.png" alt="icono" class="logo"></a>
 
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
 
-          <ul class="navbar-nav ">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
-            </li>
+          <ul class="navbar-nav">
 
             <li class="nav-item">
               <a class="nav-link" href="nos.html">Sobre nosotros</a>
             </li>
-
             <!-- se reemplaza por link simple a intro -->
             <li class="nav-item">
               <a class="nav-link" href="intro.html">Planes</a>
             </li>
- 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                servicios
+                Servicios
               </a>
-
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Consultorio externos</a></li>
                 <li><a class="dropdown-item" href="#">Examenes de laboratorios</a></li>
@@ -58,27 +51,16 @@
                 <li><a class="dropdown-item" href="#">Protesis</a></li>
                 <li><a class="dropdown-item" href="#">Cirugias</a></li>
               </ul>
-
-
               <!-- se reemplaza menu desplegable -->
             <li class="nav-item">
               <a class="nav-link" href="sucursales.html">Sucursales</a>
             </li>
-
-          </ul>
-          </li>
-
           </ul>
         </div>
       </div>
     </nav>
-
-    
-
   </header>
 
-
-  
   <main>
 
     
@@ -86,7 +68,6 @@
 
 <h2 class="titl-sucursal">ENCONTRANOS EN: </h2>
     <section class="gallery-sucur">
-
       <div class="map-container">   
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.8968382365174!2d-58.42578431644722!3d-34.58431462113877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1681763894343!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="map-overlay">
@@ -122,17 +103,14 @@
         </div>
       </div>
 
-
       <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1966.1580377751486!2d-66.19364322252687!3d-33.2494837370936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d415cc53eb0dd3%3A0xc7a26b6bd203d97e!2sEl%20Volcan%2C%20San%20Luis!5e0!3m2!1ses!2sar!4v1681764742736!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="map-overlay">
           <p>Av. San Martin 202, El Volcan San Luis</p>
         </div>
       </div>
-
     </section>
 
-  
   </main>
 
   <footer>
@@ -143,9 +121,9 @@
     </div>
 
     <div class="redes m-3">
-      <a href="" class="social-icon-link"><span class="icon-facebook"></span></a>
-      <a href="" class="social-icon-link"><span class="icon-instagram"></span></a>
-      <a href="" class="social-icon-link"><span class="icon-twitter"></span></a>
+      <a href="" class="social-icon-link"><img src="assets/img/facebook.png" alt="ico-facebook"></a>
+      <a href="" class="social-icon-link"><img src="assets/img/insta.png" alt="insta-ico"></a>
+      <a href="" class="social-icon-link"><img src="assets/img/twiter.png" alt="twiter-ico"></a>
     </div>
 
     <div class="text-center">
@@ -156,13 +134,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-
-  <!-- script que redirecciona cada plan al formulario -->
-  <script>
-    //? porque solo abre el el formulario la primera tarjeta? fix
-    btnForm = document.querySelector(".btn-card")
-    btnForm.addEventListener('click', () => { window.location.href = "form.html" })
-  </script>
 
 </body>
 

@@ -13,3 +13,14 @@
 * se reeemplaza menu desplegable de sucursales
 * ahora cada boton de "planes" de la pagina intro redirecciona al formulario
 ---
+* se quita menu de planes del nav
+* se agrega texto de descripcion en cada tarjeta de planes
+
+* arreglar pagina sucursales
+* arreglar pagina sobre nosotros
+
+* se arregla pagina index.html
+* se agrega link hacia index.html en el logo
+* correcciones del nav
+* se crea tarjetas de "nosotros"
+---

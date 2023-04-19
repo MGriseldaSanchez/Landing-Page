@@ -4,7 +4,7 @@
 :root{
 
   --main-color : #e4002b;
-  --back-color : #fff;
+  --back-color : #e7e6f7;
   --primary-font : 'Quicksand', sans-serif;
   --second-font :'Lato', sans-serif;
 }
@@ -12,11 +12,11 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: var(--primary-font)
-}
-/* hoja de estilo de pagina principal */
-/* header */
+  font-family: var(--primary-font);
 
+}
+
+/*-----------------------------------------------------------------------------------------*/
 
 body{
   background-image: url("../img/back.jpg");
@@ -24,24 +24,25 @@ body{
   background-repeat: no-repeat;
   background-position:  center;
   background-blend-mode: multiply; /* mezcla la imagen de fondo con el color de fondo */
-  background-color: rgba(48, 46, 46, 0.7); /* establece un color de fondo semi-transparente */
+  background-color:var(--main-color); /* establece un color de fondo semi-transparente */
 }
 
+/*header*/
 
 header {
-    background-color: var(--back-color);
-    border-bottom: 2px solid var(--main-color);
+    /* border-bottom: 2px solid var(--main-color); */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: #e7e6f7;
+    
   }
-
 
   /* logo */
   img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
   }
 
@@ -59,42 +60,44 @@ header {
     }
   }
 
+/*-----------------------------------------------------------------*/
 
-  /* menu del nav */
+/*nav */
+
   nav {
     width: 0px;
     height: 50px;
   }
 
-  nav ul {
-    list-style: none;
-    display: flex;
 
+  .navbar-nav{
+    margin-left: 140vh;
   }
-  /* opciones del nav */
-  nav ul li {
-    margin-right: 20px;
-    
+
+  .nav-link, .dropdown-item{
+    font-size: 17px;
   }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-    
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    transition: all 0.3s ease;
-  }
-  
-  /* color hover */
-  nav ul li a:hover {
+
+  .nav-link:hover {
     color: var(--main-color);
   }
+  
+  .dropdown-item:hover{
+    color: var(--main-color);
+  }
+  
+/*-----------------------------------------------------------------------------*/
 
-  /*-estilo de tarjetas*/
+/*intro.html*/
+
+  /*tarjetas planes*/
+
+.title-planes{
+  text-align: center;
+  color: var(--back-color);
+  margin-top: 20px;
+  
+}
 
 .container{
   display: flex;
@@ -102,8 +105,9 @@ header {
   align-items: center;
   align-content: center;
   flex-direction: row;
+  
 }
-/*estilo de las tarjetas*/
+
 
 .card {
   position: relative;
@@ -133,8 +137,6 @@ header {
 .card:hover .text-oculto {
   display: block;
 }
-
-
 
 /* titulos de tarjetas */
 .card h2 {
@@ -186,7 +188,8 @@ main{
   width: 100%;
 }
 
-
+/*----------------------------------------------*/
+/*form.html*/
 /* formulario */
 
 .form-title{
@@ -227,28 +230,33 @@ span{
   color: var(--main-color);
 }
 
+/*-------------------------------------------*/
+
 /* footer */
 footer {
-    
     left: 0;
     bottom: 0;
     width: 100%;
-    color:black;
-    background-color: var(--back-color);
-    border-top: 2px solid var(--main-color);
+    color:var(--back-color);
+    /* background-color: var(--back-color); */
+    border-top: 5px solid var(--back-color);
+    position:relative;
+    
 
   }
 
-  
   .contacto {
     text-align:center;
     margin: 0 50px;
+  }
 
+  #email{
+    color: var(--back-color);
   }
   
   .contacto span {
     /* margin: 0; */
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
@@ -256,18 +264,16 @@ footer {
     font-size: small;
   }
 
-  /* hay que centrar iconos de redes */
-
 .redes{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
   .redes a {
     /* margin-right: 10px; */
-    color: rgb(35, 1, 255);
+    color:var(--back-color);
     text-decoration: none;
     /* font-size: 15px; */
     
@@ -276,44 +282,43 @@ footer {
   .redes a:hover {
     color: var(--main-color);
   }
-  
-  /* .fas, .fab {
-    margin-right: 10px;
-  } */
 
-/* estilo pagina nosotros*/
+  .redes .social-icon-link img{
+    width: 20px;
+    height: 20px;
+  }
 
-.container-nos {
+/*-------------------------------------------*/
 
-  display: flex;
-  justify-content:space-around;
-  flex-wrap: wrap;
-}
+/*sucursales.html*/
 
 /*sucursales*/
 
 .gallery-sucur {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   margin-top: 10vh;
   padding: 40px;
 }
 
 iframe {
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   border: none;
+  
 }
 
 .titl-sucursal{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
+  color: var(--back-color);
 }
 
 .map-container{
 position: relative;
+
 }
 
 .map-overlay {
@@ -321,16 +326,86 @@ position: relative;
   top: 0px;
   left: 0px;
   display: none;
-  background-color: rgba(0, 0, 0, 0.564);
+  background-color: rgba(0, 0, 0, 0.496);
   color: #fff;
   padding: 30px;
+  width: 300px;
+  height: 250px;
+  font-size: 25px;
 }
 
 .map-container:hover .map-overlay {
   display: block;
 }
 
-/*-----------*/
+/*------------------------------------------*/
 
-/* tarjetas de planes.html */
+/*nos.html*/
+
+.title-nos h1{
+  text-align: center;
+  color: var(--back-color);
+  margin-top: 20px;
+}
+
+.container-nos{
+  display: flex;
+  justify-content: center;
+}
+
+.profiles{
+ height: 500px;
+ width: 350px;
+ background-color: var(--back-color);
+ margin: 5px;
+ border-radius: 30px;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+
+}
+
+.profiles .card-img{
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  
+
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.card-body h4{
+  text-align: center;
+  color: #333;
+
+
+}
+
+/* Cambia el color de la barra de scroll */
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--back-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+
+
+
+
+
 
