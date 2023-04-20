@@ -64,20 +64,25 @@ header {
 
 /*nav */
 
-  nav {
-    width: 200px;
-    height: 50px;
+  .navbar {
+    width: 0px;
+    height: 40px;
   }
 
 
   .navbar-nav{
-    margin-left: 140vh;
+    margin-left: 105vh;
   }
 
-  .nav-link, .dropdown-item{
+  .navbar-nav .nav-item{
+    margin: 40px;
+  }
+
+  
+  .nav-item{
     font-size: 20px;
-    border-left: 1px solid var(--main-color);
-    
+   border-left: 2px solid var(--main-color);
+   border-radius: 20px;
   }
 
 
@@ -120,23 +125,14 @@ header {
   padding: 20px;
   margin: 20px;
  transition: all 1s ease;
- 
-
 }
 
 #card-1{
   background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
   background-position: center;
-}
-
-/* #card-1 h2{
-  color: var(--main-color);
-  font-size: 4em;
-  font-weight:200;
-  border-bottom: 2px solid var(--main-color);
   
-} */
+}
 
 #card-2{
   background-image: url(https://images.pexels.com/photos/7741752/pexels-photo-7741752.jpeg?auto=compress&cs=tinysrgb&w=1600);
@@ -189,7 +185,7 @@ header {
   color: var(--main-color);
   margin-bottom: 20px;
   font-weight: 700;
-  background-color: #e4002a24;
+  /* background-color: #e7e6f782; */
   border-radius: 20px;
 
 }
@@ -229,10 +225,6 @@ header {
   color: var(--main-color);
 }
 
-/* main{
-  height: 90vh;
-  width: 100%;
-} */
 
 /*----------------------------------------------*/
 /*form.html*/
@@ -240,7 +232,7 @@ header {
 
 .form-title{
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: var(--back-color);
   margin-top: 10px;
 }
 
@@ -252,7 +244,7 @@ header {
 }
 
 #contact{
-  background-color: rgba(255, 255, 255, 0.518) ;
+  background-color: var(--back-color) ;
   /* border-radius: 20px; */
   color: #1e272e;
   width: 90vh;
@@ -400,11 +392,12 @@ position: relative;
 }
 
 .profiles{
- height: 500px;
- width: 350px;
+ height: 450px;
+ width: 300px;
  background-color: var(--back-color);
  margin: 5px;
  border-radius: 30px;
+ margin-bottom: 50px;
 
  display: flex;
  justify-content: center;
@@ -450,8 +443,36 @@ position: relative;
 }
 
 
+/*-------------------------------------*/
+/*servicios.html*/
 
+/* contenedor de todas los servicios */
+.tab-content{
+  background-color:var(--back-color);
+  border-top: 2px solid var(--main-color);
+}
 
+/* imagen */
+.col-4 img{
+  width: 150px;
+  min-height: 150px;
+  border-radius: 50%;
+}
 
+/* titulo */
+.pt-2{
+  color: #333;
+  text-align: center;
+}
 
+/* parrafo  */
+.col-8{
+  color: #180A0A;
+  font-size: 1em;
+}
+
+/* linea divisoria */
+hr{
+  color: var(--main-color);
+}
 

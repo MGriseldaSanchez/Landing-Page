@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,133 +11,176 @@
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/normalize.css">
   <title>Protegemed</title>
 </head>
 
 <body>
   <!-- header -->
   <header>
-  
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
         <!-- icono  -->
-        <img src="assets/img/latidos-.png" alt="icono" class="logo">
-
-
+        <a href="index.html"><img src="assets/img/latidos-.png" alt="icono" class="logo"></a>
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
-
-          <ul class="navbar-nav ">
-
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+              <a class="nav-link" href="nos.html">Nosotros</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="nos.html">Sobre nosotros</a>
-            </li>
-
             <!-- se reemplaza por link simple a intro -->
             <li class="nav-item">
               <a class="nav-link" href="intro.html">Planes</a>
             </li>
- 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                servicios
+                Servicios
               </a>
-
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Consultorio externos</a></li>
-                <li><a class="dropdown-item" href="#">Examenes de laboratorios</a></li>
-                <li><a class="dropdown-item" href="#">Atencion primaria</a></li>
-                <li><a class="dropdown-item" href="#">Emergencia 24 hs</a></li>
-                <li><a class="dropdown-item" href="#">Pediatria</a></li>
-                <li><a class="dropdown-item" href="#">Medicacion</a></li>
-                <li><a class="dropdown-item" href="#">Protesis</a></li>
-                <li><a class="dropdown-item" href="#">Cirugias</a></li>
+                <li><a class="dropdown-item" href="servicios.html#con-ex">Consultorio externos</a></li>
+                <li><a class="dropdown-item" href="servicios.html#exam-lab">Examenes de laboratorios</a></li>
+                <li><a class="dropdown-item" href="servicios.html#aten-prim">Atencion primaria</a></li>
+                <li><a class="dropdown-item" href="servicios.html#emer-24">Emergencia 24 hs</a></li>
+                <li><a class="dropdown-item" href="servicios.html#pediatria">Pediatria</a></li>
+                <li><a class="dropdown-item" href="servicios.html#cirugia">Cirugias</a></li>
               </ul>
-
-
               <!-- se reemplaza menu desplegable -->
             <li class="nav-item">
               <a class="nav-link" href="sucursales.html">Sucursales</a>
             </li>
-
-          </ul>
-          </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    
-
-  </header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-      <div class="container-fluid">
-        <!-- icono  -->
-        <img src="assets/img/latidos-.png" alt="icono" class="logo">
-
-
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
-
-          <ul class="navbar-nav ">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="nos.html">Sobre nosotros</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                planes </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href=".card">plan personal</a></li>
-                <li><a class="dropdown-item" href="#">plan parejas</a></li>
-                <li><a class="dropdown-item" href="#">plan full familiar</a></li>
-                <li><a class="dropdown-item" href="form.html">Consulta por mas planes</a></li>
-
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                servicios
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Consultorio externos</a></li>
-                <li><a class="dropdown-item" href="#">Examenes de laboratorios</a></li>
-                <li><a class="dropdown-item" href="#">Atencion primaria</a></li>
-                <li><a class="dropdown-item" href="#">Emergencia 24 hs</a></li>
-                <li><a class="dropdown-item" href="#">Pediatria</a></li>
-                <li><a class="dropdown-item" href="#">Medicacion</a></li>
-                <li><a class="dropdown-item" href="#">Protesis</a></li>
-                <li><a class="dropdown-item" href="#">Cirugias</a></li>
-              </ul>
-
-
-              <!-- se reemplaza menu desplegable -->
-            <li class="nav-item">
-              <a class="nav-link" href="sucursales.html">Sucursales</a>
-            </li>
-
-
-          </ul>
-          </li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
-    
+
+  <main>
+
+    <div class="tab-content">
+
+        <div class="row">
+          <!-- FILA1 -->
+
+          <!-- consultorios externos -->
+          <div class="col-xs-12 col-md-4 p-3">
+
+            <div class="p-3 fondo_card" id="con-ex">
+              <h4 class="pt-2 tit_card">Consultorios externos</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://www.uom.org.ar/site/wp-content/uploads/2017/04/CASILDA_Sanatorio-Juli%C3%A1n-Moreno_Consultorios-Externos-04.jpg" alt="consultorio">
+                </p>
+                <p class="col-8"><br>
+                  Con instalaciones equipadas para la consulta medica especializada y atencion primaria, nuestros consultorios externos se hubican en nuestros centros de salud y clinicas adheridas.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+            <!-- Examentes de laboratorio -->
+          <div class="col-xs-12 col-md-4 p-3">
+            <div class="p-3 fondo_card" id="exam-lab">
+              <h4 class="pt-2 tit_card">Examenes de laboratorio</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://laboratoriomartinez.com/wp-content/uploads/2018/11/examenes-rutina-laboratorio.jpg"
+                    alt="laboratorio"></p>
+                <p class="col-8">
+                  Sabemos que los exámenes de laboratorio son una herramienta esencial para el diagnóstico y seguimiento de enfermedades, por lo que nos aseguramos de contar con tecnología de última generación y personal capacitado para llevar a cabo estos análisis con precisión y rapidez.<br>
+                  Nuestros afiliados pueden acceder a una gran variedad de exámenes de laboratorio, desde análisis de sangre y orina hasta pruebas especializadas para enfermedades crónicas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Atencion primaria -->
+          <div class="col-xs-12 col-md-4 p-3">
+            <div class="p-3 fondo_card" id="aten-prim">
+              <h4 class="pt-2 tit_card">Atencion primaria de salud</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://static.abc.es/media/espana/2021/10/07/atencion-primaria-kkNC--1200x630@abc.JPG" alt="atencion-prim"></p>
+                <p class="col-8">
+                  La atención primaria de salud es el primer nivel de atención médica que se brinda, es un enfoque integral de atención que se centra en la prevención de enfermedades y la promoción de la salud.<br> Por eso es tan importante para nosotros.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- FILA 2-->
+          <!-- Emergencias  -->
+          <div class="col-xs-12 col-md-4 p-3">
+            <div class="p-3 fondo_card" id="emer-24">
+              <h4 class="pt-2 tit_card">Emergencias 24hs</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://altagracia.gob.ar/wp-content/uploads/2017/05/emergencias-medicas.jpg" alt="emergencias-24"></p>
+                <p class="col-8">
+                  Nuestro servicio de emergencia cuenta con un equipo de médicos altamente capacitados y equipados con tecnología de última generación para brindarte la mejor atención en el momento en que la necesites. Ya sea que estés en casa, en el trabajo o en cualquier otro lugar, puedes estar seguro/a de que nuestro equipo de emergencia estará allí para ti.
+                </p>
+              </div>
+            </div>
+          </div>
+
+            <!-- Pediatria -->
+          <div class="col-xs-12 col-md-4 p-3">
+            <div class="p-3 fondo_card" id="pediatria">
+              <h4 class="pt-2 tit_card">Pediatria</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://eresmama.com/wp-content/uploads/2019/04/bebe-revision-pediatra-que-es-la-pediatria.jpg"
+                    alt="pedriatria"></p>
+                <p class="col-8">
+                  Nuestro servicio de pediatria incluye consultas médicas, atención de emergencia las 24 horas, exámenes médicos, vacunación, control del crecimiento y desarrollo, atención nutricional, y tratamientos para enfermedades comunes en la infancia,odontologia etc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cirugia -->
+          <div class="col-xs-12 col-md-4 p-3">
+            <div class="p-3 fondo_card" id="cirugia">
+              <h4 class="pt-2 tit_card">Cirugia</h4>
+              <hr>
+              <div class="row">
+                <p class="col-4"><img src="https://cnnespanol.cnn.com/wp-content/uploads/2023/01/230110214153-ranking-operaciones-pba-full-169.jpeg?quality=100&strip=info" class="img-fluid rounded-circle"
+                    alt="cirugia"></p>
+                <p class="col-8">
+                  Cobertura de cirugias de emergencia y cirugias de mediana y alta complejidad segun plan contratado, ademas ofrecemos descuentos en cirugias esteticas. Nuestros centros de salud estan equipados con quirofanos de ultima generacion y profesionales de todas las especialidades quirugicas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div class="contacto m-3">
+      <span class="icon-location"> Dirección: Calle Cualquiera 123, Ciudad Autónoma de Buenos Aires</span><br>
+      <span class="icon-phone"> Teléfono: +54 11 1234-5678 </span><br>
+      <span class="icon-mail"> <a href="mailto:tissone836@gmail.com" id="email">info@protegemed.com.ar</a></span>
+    </div>
+    <div class="redes m-3">
+      <a href="" class="social-icon-link"><img src="assets/img/facebook.png" alt="ico-facebook"></a>
+      <a href="" class="social-icon-link"><img src="assets/img/insta.png" alt="insta-ico"></a>
+      <a href="" class="social-icon-link"><img src="assets/img/twiter.png" alt="twiter-ico"></a>
+    </div>
+    <div class="text-center">
+      <p class="copy">protegemed | Todos los derechos reservados </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
