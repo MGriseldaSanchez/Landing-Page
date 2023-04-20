@@ -1,10 +1,10 @@
 /* validacion de formulario con jQuery */
 
 // evita el envio del form
-jQuery.validator.setDefaults({
-  debug: true,
-  success: "valid",
-});
+// jQuery.validator.setDefaults({
+//   debug: true,
+//   success: "valid",
+// });
 
 $(document).ready(function () {
   // metodo validate de jquery
@@ -30,18 +30,17 @@ $(document).ready(function () {
         email: true,
       },
 
-      genero:{
+      genero: {
         required: true,
-
       },
 
-    //arreglado
+      //arreglado
       plan: {
         required: true,
       },
 
       mensaje: {
-        minlength: 30,
+        minlength: 20,
       },
     },
     //mensajes personalizados
@@ -64,9 +63,8 @@ $(document).ready(function () {
         email: `Debe tener un formato abc@domain.tld`,
       },
 
-      genero:{
-
-        required: ` `
+      genero: {
+        required: ` Seleccione uno`,
       },
       plan: {
         required: `Seleccione uno`,
@@ -74,36 +72,30 @@ $(document).ready(function () {
 
       mensaje: {
         required: `Campo obligatorio`,
-        minlength: `Debe tener un minimo de 30 caracteres`,
+        minlength: `Debe tener un minimo de 20 caracteres`,
       },
     },
     // se crea un elemento span donde se muestra el msj de error
-    errorElement : 'span'
+    errorElement: "span",
+    //hace foco en el campo invalido
+    focusInvalid: true,
+    //funcion de jquery validation que se ejecuta cuando se envia el form
+    submitHandler: function(form) {
+      // Aquí puedes agregar tu código para enviar el formulario
+      alert("Formulario enviado con exito")
+    }
   });
 });
 
 
 
-/* enfoca sobre el campo invalido al enviar el formulario */
-
-// cuando se hace clic en el botón de enviar el formulario
-$(".btn btn-danger").click(function () {
-  // si el formulario no es válido
-  if (!$("#contact").valid()) {
-    // busca el primer campo que no haya sido validado
-    var primerCampoInvalido = $("#contact").find(":input.error:first");
-    // enfoca en el primer campo inválido
-    primerCampoInvalido.focus();
-    primerCampoInvalido.val("");
-  }
-});
-
 /* funcion jquery que permite la seleccion solo de un check */
 $(document).ready(function () {
-
   $(".form-check-input").click(function () {
     //cuando se selecciona un check ,prop("checked,false") deselecciona los demas
     $(".form-check-input").not(this).prop("checked", false);
   });
 });
+
+/*prueba de funcion  */
 
